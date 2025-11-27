@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -27,19 +26,50 @@ h1 {
 p {
     font-size: 22px;
 }
+
+/* 🎄 Caja estilo consola */
+.code-box {
+    padding: 25px;
+    border: 3px solid #39ff14;
+    border-radius: 12px;
+    background: #1E1E1E;                /* fondo VSCode */
+    color: #D4D4D4;                     /* texto base VSCode */
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 20px;
+    position: relative;
+    box-shadow: 0 0 20px #39ff14, 0 0 40px #0f0 inset;
+    display: flex;
+    justify-content: center;
+}
+
+.code-box pre {
+    white-space: pre;
+    text-align: left;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* 🔥 Colores estilo Visual Studio Code */
+.kw { color: #569CD6; }      /* palabras clave */
+.str { color: #CE9178; }     /* strings */
+.fn { color: #DCDCAA; }      /* nombres de funciones */
 </style>
 </head>
 <body>
 <div class="card">
     <h1>🎄👨🏽‍💻 🎅🏻 👩🏽‍💻 🎄</h1>
-    <img src="arbol_navidad_lento.gif" alt="GIF Navideño" style="width:90%; border-radius:10px;">
-    <pre>
-def ModoNavidad():
-    return "✨🎅 Modo Navidad Activado 🎅✨"
 
-if __name__ == "__main__":
-    print(ModoNavidad())
-</pre>
+    <img src="arbol_navidad_lento.gif" alt="GIF Navideño" style="width:90%; border-radius:10px;">
+
+    <div class="code-box">
+        <pre>
+<span class="kw">def</span> <span class="fn">ModoNavidad</span>():
+    <span class="kw">return</span> <span class="str">"✨🎅 Modo Navidad Activado 🎅✨"</span>
+
+<span class="kw">if</span> __name__ == <span class="str">"__main__"</span>:
+    <span class="fn">print</span>(<span class="fn">ModoNavidad</span>())
+        </pre>
+    </div>
 </div>
 </body>
 </html>
